@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+body {
+    background-image: url('https://wallpapercave.com/wp/4btLZZs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+    align-items: center;
+    height: 100vh; /* Adjusted the height to 100vh for better visibility */
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border: 10px solid #003b7a;
+    border-radius: 10px;
+    padding: 30px; /* Adjusted the padding */
+    width: 30px; /* Adjusted the width */
+    box-shadow: 0px 0px 10px rgba(6, 0, 84, 0.5);
+    border: 2px solid #fffdfd;
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    font-size: 36px; /* Adjusted the font size */
+    color: #fff; /* White header text color */
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 5px solid black;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 100%; /* Adjusted the width */
+    transition: background-color 0.3s; /* Add transition for background color change */
+
+    /* Add hover effect */
+    &:hover {
+        background-color:grey; /* Light gray background on hover */
+    }
+}
+
+/* Style labels and input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 90%; /* Reduced the width to 80% */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the Predict button */
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5%;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for background color change */
+}
+
+/* Add hover effect to the Predict button */
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    text-align: left;
+}
+
+/* Style for feature containers */
+.feature-container {
+    margin-bottom: 20px;
+}
+
+/* Move the form to the right side */
+.form-container {
+    margin-left: auto;
+    margin-right: 0;
+}
+.container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: right;
+            height: 20vh;
+            background-color: black;
+        }
+
+        .output {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2, p {
+            color:black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="form-title">Airline Delay Statement</h1>
+<form method="POST" action="/">
+    <label for="feature1">Distance</label>
+    <input type="number" name="feature1" step="0.01" required><br>
+
+    <label for="feature2">Weather</label>
+    <input type="number" name="feature2" step="0.01" required><br>
+
+    <label for="feature3">DayWeek</label>
+    <input type="number" name="feature3" step="0.01" required><br>
+
+    <!-- Add the remaining features up to 23 -->
+    <label for="feature4">Dest_EWR</label>
+    <input type="number" name="feature4" step="0.01" required><br>
+
+    <label for="feature5">Dest_JFK</label>
+    <input type="number" name="feature5" step="0.01" required><br>
+
+    <label for="feature6">Dest_LGA</label>
+    <input type="number" name="feature6" step="0.01" required><br>
+
+    <label for="feature7">DEPTIME_AFTERNOON</label>
+    <input type="number" name="feature7" step="0.01" required><br>
+
+    <label for="feature8">DEPTIME_EVENING</label>
+    <input type="number" name="feature8" step="0.01" required><br>
+
+    <label for="feature9">DEPTIME_MORNING</label>
+    <input type="number" name="feature9" step="0.01" required><br>
+
+    <label for="feature10">DEPTIME_OVERNIGHT</label>
+    <input type="number" name="feature10" step="0.01" required><br>
+    <input type="submit" value="Statement">
+    <body>
+        <ul>
+            <li><a href="https://public.tableau.com/views/ARUNSUKUMAR/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">Dashboard</a>
+        </ul>
+    </body>
+    </html>  
+</form>
+<div class="container">
+    <div class="output">
+        {% if prediction is not none %}
+            <h2>Statement</h2>
+            <p>{{ prediction }}</p>
+        {% else %}
+            <h2>Please enter the required features and click "Statement" to get a Statement</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
+</div>
+</body>
+</html>
+</body>
+</html>
