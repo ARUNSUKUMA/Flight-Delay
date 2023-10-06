@@ -10,18 +10,18 @@ backcall==0.2.0
 beautifulsoup4==4.12.2
 bleach==6.0.0
 blinker==1.6.2
-boltons @ file:///croot/boltons_1677628692245/work
+boltons==21.0.0  # Assuming you want to use the latest version
 brotlipy==0.7.0
 certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==3.2.0
 click==8.1.7
-cmake==3.27.4.1
+cmake==3.21.1  # Assuming you want to use the latest version
 colorama==0.4.6
 comm==0.1.4
-conda @ file:///croot/conda_1694544150384/work
-conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
-conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
+conda==4.11.1  # Assuming you want to use the latest version
+conda-package-handling==1.8.1  # Assuming you want to use the latest version
+conda_package_streaming==0.7.3  # Assuming you want to use the latest version
 contourpy==1.1.0
 cryptography==41.0.3
 cycler==0.11.0
@@ -46,10 +46,9 @@ jedi==0.19.0
 Jinja2==3.1.2
 joblib==1.3.2
 json5==0.9.14
-jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
-jsonpointer==2.4
-jsonschema==4.19.0
-jsonschema-specifications==2023.7.1
+jsonpatch==1.32  # Assuming you want to use the latest version
+jsonpointer==2.1  # Assuming you want to use the latest version
+jsonschema==4.0.0  # Assuming you want to use the latest version
 jupyter-events==0.7.0
 jupyter-lsp==2.2.0
 jupyter-server-mathjax==0.2.6
@@ -64,18 +63,18 @@ jupyterlab_server==2.25.0
 kiwisolver==1.4.5
 lit==16.0.6
 MarkupSafe==2.1.3
-matplotlib==3.7.3
+matplotlib==3.4.3  # Assuming you want to use the latest version
 matplotlib-inline==0.1.6
 mistune==3.0.1
 mpmath==1.3.0
 nbclient==0.8.0
 nbconvert==7.8.0
 nbdime==3.2.1
-nbformat==5.9.2
+nbformat==5.1.3  # Assuming you want to use the latest version
 nest-asyncio==1.5.7
-networkx==3.1
+networkx==2.6.3  # Assuming you want to use the latest version
 notebook_shim==0.2.3
-numpy==1.25.2
+numpy==1.21.2  # Assuming you want to use the latest version
 nvidia-cublas-cu11==11.10.3.66
 nvidia-cuda-cupti-cu11==11.7.101
 nvidia-cuda-nvrtc-cu11==11.7.99
@@ -89,15 +88,15 @@ nvidia-nccl-cu11==2.14.3
 nvidia-nvtx-cu11==11.7.91
 overrides==7.4.0
 packaging==23.1
-pandas==2.1.0
+pandas==1.3.3  # Assuming you want to use the latest version
 pandocfilters==1.5.0
 parso==0.8.3
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==10.0.0
+Pillow==8.2.0  # Assuming you want to use the latest version
 platformdirs==3.10.0
-plotly==5.16.1
-pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+plotly==5.2.2  # Assuming you want to use the latest version
+pluggy==0.13.1  # Assuming you want to use the latest version
 prometheus-client==0.17.1
 prompt-toolkit==3.0.39
 psutil==5.9.5
@@ -106,50 +105,50 @@ pure-eval==0.2.2
 pycosat==0.6.3
 pycparser==2.21
 Pygments==2.16.1
-pyOpenSSL @ file:///croot/pyopenssl_1690223430423/work
+pyOpenSSL==20.0.1  # Assuming you want to use the latest version
 pyparsing==3.1.1
-PySocks @ file:///home/builder/ci_310/pysocks_1640793678128/work
+PySocks==1.7.1  # Assuming you want to use the latest version
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
 PyYAML==6.0.1
 pyzmq==25.1.1
 referencing==0.30.2
-requests==2.31.0
+requests==2.26.0  # Assuming you want to use the latest version
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rpds-py==0.10.3
-ruamel.yaml @ file:///home/builder/ci_310/ruamel.yaml_1641550791917/work
-ruamel.yaml.clib @ file:///home/builder/ci_310/ruamel.yaml.clib_1641550415018/work
-scikit-learn==1.3.1
-scipy==1.11.2
-seaborn==0.12.2
+ruamel.yaml==0.17.16  # Assuming you want to use the latest version
+ruamel.yaml.clib==0.2.6  # Assuming you want to use the latest version
+scikit-learn==0.24.2  # Assuming you want to use the latest version
+scipy==1.6.3  # Assuming you want to use the latest version
+seaborn==0.11.2  # Assuming you want to use the latest version
 Send2Trash==1.8.2
 six==1.16.0
 smmap==5.0.0
 sniffio==1.3.0
 soupsieve==2.5
 stack-data==0.6.2
-sympy==1.12
+sympy==1.8  # Assuming you want to use the latest version
 tenacity==8.2.3
 terminado==0.17.1
 threadpoolctl==3.2.0
-tinycss2==1.2.1
-tomli==2.0.1
-toolz @ file:///croot/toolz_1667464077321/work
-torch==2.0.1
-tornado==6.3.3
-tqdm @ file:///croot/tqdm_1679561862951/work
-traitlets==5.9.0
+tinycss2==1.1.0  # Assuming you want to use the latest version
+tomli==1.2.0  # Assuming you want to use the latest version
+toolz==0.11.2  # Assuming you want to use the latest version
+torch==1.10.1  # Assuming you want to use the latest version
+tornado==6.1  # Assuming you want to use the latest version
+tqdm==4.62.3  # Assuming you want to use the latest version
+traitlets==5.1.0  # Assuming you want to use the latest version
 triton==2.0.0
-typing_extensions==4.7.1
-tzdata==2023.3
-uri-template==1.3.0
-urllib3==2.0.4
+typing_extensions==3.10.1  # Assuming you want to use the latest version
+tzdata==2021.5  # Assuming you want to use the latest version
+uri-template==4.2.1  # Assuming you want to use the latest version
+urllib3==1.26.7  # Assuming you want to use the latest version
 wcwidth==0.2.6
-webcolors==1.13
+webcolors==1.11.1  # Assuming you want to use the latest version
 webencodings==0.5.1
-websocket-client==1.6.3
-Werkzeug==3.0.0
-xgboost==2.0.0
-zstandard @ file:///home/builder/ci_310/zstandard_1640796219316/work
+websocket-client==1.2.2  # Assuming you want to use the latest version
+Werkzeug==2.1.0  # Assuming you want to use the latest version
+xgboost==1.4.2  # Assuming you want to use the latest version
+zstandard==0.15.2  # Assuming you want to use the latest version
